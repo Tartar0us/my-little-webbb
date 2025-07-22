@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>俄罗斯方块游戏</title>
+    <link rel="stylesheet" href="tetris.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>俄罗斯方块</h1>
+        <div class="game-info">
+            <div class="score">得分: <span id="score">0</span></div>
+            <div class="lines">已消除行数: <span id="lines">0</span></div>
+        </div>
+        <div class="board-container">
+            <div id="board"></div>
+            <div class="next-piece-container">
+                <h3>下一个方块</h3>
+                <div id="next-piece"></div>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start-button" onclick="startGame()">开始游戏</button>
+            <button id="pause-button" onclick="pauseGame()" disabled>暂停</button>
+        </div>
+        <div class="game-over" id="gameOver">
+            <h2>游戏结束!</h2>
+            <p>你的得分: <span id="finalScore">0</span></p>
+            <p>消除行数: <span id="finalLines">0</span></p>
+            <button onclick="startGame()">再来一局</button>
+        </div>
+    </div>
+
+    <script src="tetris.js"></script>
+</body>
+</html>

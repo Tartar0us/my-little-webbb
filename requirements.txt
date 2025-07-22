@@ -1,0 +1,5 @@
+pyunpack==0.3
+patoolib==1.12
+py7zr==0.20.8
+rarfile==4.0
+zipfile36==0.1.3
